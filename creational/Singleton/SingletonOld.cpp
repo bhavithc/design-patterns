@@ -22,10 +22,26 @@ public:
         return Singleton::m_pInstance;
     }
 
+    static void destroy()
+    {
+        // Commenting below line make multiple destroy can enter at the same time
+        std::lock_guard<std::mutex> lock(m_mtx);
+        if (Singleton::m_pInstance != nullptr) {
+            delete Singleton::m_pInstance;
+        }
+
+        Singleton::m_pInstance = nullptr;
+    }
+
 protected:
     Singleton()
     {
         std::cout << "Instance created \n";
+    }
+
+    ~Singleton()
+    {
+        std::cout << "Instance destroyed \n";
     }
 private:
     static Singleton* m_pInstance;
@@ -53,6 +69,9 @@ int main()
             t.join();
         }
     }
+
+    Singleton::destroy();
+    Singleton::destroy(); // This one should not crash the program
 
     return 0;
 }
