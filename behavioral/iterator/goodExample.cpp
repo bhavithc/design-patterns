@@ -101,7 +101,7 @@ public:
         }
     }
 
-    std::shared_ptr<Iterator> getIterator()
+    std::shared_ptr<Iterator> createIterator()
     {
         return std::make_shared<DinnerMenuIterator>(m_menuItems, m_nrOfItems);   
     }
@@ -130,7 +130,7 @@ public:
         m_menuItems.push_back(menuItem);
     }
 
-    std::shared_ptr<Iterator> getIterator()
+    std::shared_ptr<Iterator> createIterator()
     {
         return std::make_shared<BreakFastMenuIterator>(m_menuItems);   
     }
@@ -199,10 +199,10 @@ public:
         MenuItem dinnerItems[dinnerItemCnt];
 
         BreakFastMenu breakFastMenu;
-        auto breakFastIter = breakFastMenu.getIterator();
+        auto breakFastIter = breakFastMenu.createIterator();
         
         DinnerMenu dinnerMenu;
-        auto dinnerIter = dinnerMenu.getIterator();
+        auto dinnerIter = dinnerMenu.createIterator();
 
         std::cout << "\nBREAKFAST\n";
 
@@ -222,7 +222,7 @@ public:
     {
         std::vector<MenuItem> breakFastItems = {};
         BreakFastMenu breakFastMenu;
-        auto breakFastIter = breakFastMenu.getIterator();
+        auto breakFastIter = breakFastMenu.createIterator();
         
         std::cout << "\nBREAKFAST\n";
         while (breakFastIter->hasNext())
@@ -236,7 +236,7 @@ public:
         const auto dinnerItemCnt = 5;
         MenuItem dinnerItems[dinnerItemCnt];
         DinnerMenu dinnerMenu;
-        auto dinnerIter =  dinnerMenu.getIterator();
+        auto dinnerIter =  dinnerMenu.createIterator();
         std::cout << "\nDINNER\n";
         while (dinnerIter->hasNext())
         {
@@ -251,10 +251,10 @@ public:
         MenuItem dinnerItems[dinnerItemCnt];
 
         BreakFastMenu breakFastMenu;
-        auto breakFastIter = breakFastMenu.getIterator();
+        auto breakFastIter = breakFastMenu.createIterator();
         
         DinnerMenu dinnerMenu;
-        auto dinnerIter = dinnerMenu.getIterator();
+        auto dinnerIter = dinnerMenu.createIterator();
 
         std::cout << "\nBREAKFAST\n";
         while (breakFastIter->hasNext())
