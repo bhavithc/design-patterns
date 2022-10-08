@@ -17,8 +17,8 @@ Current status
 - [x] Decorator
   - [] Pimpl idiom
 - [ ] Façade
-- [ ] Flyweight
-- [ ] Proxy 
+- [x] Flyweight
+- [ ] Proxy
 
 ##### Behavioral
 - [x] Chain of responsibility
