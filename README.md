@@ -15,7 +15,7 @@ Current status
 - [ ] Bridge
 - [ ] Composite
 - [x] Decorator
-  - [x] Pimpl idiom
+  - [] Pimpl idiom
 - [ ] Façade
 - [ ] Flyweight
 - [ ] Proxy 
