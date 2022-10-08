@@ -12,7 +12,7 @@ Current status
 
 ##### Structural
 - [x] Adapter
-- [ ] Bridge
+- [x] Bridge
 - [ ] Composite
 - [x] Decorator
   - [] Pimpl idiom
