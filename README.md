@@ -18,7 +18,7 @@ Current status
   - [] Pimpl idiom
 - [ ] Façade
 - [x] Flyweight
-- [ ] Proxy
+- [x] Proxy
 
 ##### Behavioral
 - [x] Chain of responsibility
