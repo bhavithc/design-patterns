@@ -16,7 +16,7 @@ Current status
 - [ ] Composite
 - [x] Decorator
   - [] Pimpl idiom
-- [ ] Façade
+- [x] Façade
 - [x] Flyweight
 - [x] Proxy
 
