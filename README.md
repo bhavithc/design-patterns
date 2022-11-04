@@ -8,7 +8,7 @@ Current status
 - [ ] Factory method
 - [ ] Abstract factory
 - [ ] Prototype
-- [ ] Builder 
+- [x] Builder 
 
 ##### Structural
 - [x] Adapter
