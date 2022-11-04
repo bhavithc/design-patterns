@@ -5,7 +5,7 @@ Current status
 - [x] Singleton
   - [x] Classical cpp
   - [x] Modern cpp
-- [ ] Factory method
+- [x] Factory method
 - [ ] Abstract factory
 - [ ] Prototype
 - [x] Builder 
@@ -15,7 +15,7 @@ Current status
 - [x] Bridge
 - [ ] Composite
 - [x] Decorator
-  - [] Pimpl idiom
+  - [ ] Pimpl idiom
 - [x] Façade
 - [x] Flyweight
 - [x] Proxy
